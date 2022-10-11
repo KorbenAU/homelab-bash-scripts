@@ -8,13 +8,13 @@ printf "Host $valhost \n"
 
 if [ $valhost = "n1" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/Downloads /home/gy/qbit/nas
+    mount -t nfs 192.168.1.5:/mnt/tank/Downloads /home/gy/qbit/nas
     printf "mounted Downloads to  /home/gy/qbit/nas \n"
 fi
 
 if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/Downloads /nas/NFS/Downloads
+    mount -t nfs 192.168.1.5:/mnt/tank/Downloads /nas/NFS/Downloads
     printf "mounted Downloads to  /nas/NFS/Downloads \n"
 fi
 
@@ -25,7 +25,7 @@ fi
 
 if [ $valhost = "n1" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/GitLab /nas/NFS/GitLab
+    mount -t nfs 192.168.1.5:/mnt/tank/GitLab /nas/NFS/GitLab
     printf "mounted GitLab to  /nas/NFS/GitLab \n"
 fi
 
@@ -35,7 +35,7 @@ fi
 
 if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/NextCloud /nas/NFS/NextCloud
+    mount -t nfs 192.168.1.5:/mnt/tank/NextCloud /nas/NFS/NextCloud
     printf "mounted NextCloud to  /nas/NFS/NextCloud \n"
 fi
 
@@ -45,7 +45,7 @@ fi
 
 if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/projects /nas/NFS/projects
+    mount -t nfs 192.168.1.5:/mnt/tank/projects /nas/NFS/projects
     printf "mounted projects to  /nas/NFS/projects \n"
 fi
 
@@ -55,6 +55,6 @@ fi
 
 if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n3" ] || [ $valhost = "n4" ]
 then
-    # mount -t nfs 192.168.1.5:/mnt/tank/volumes /nas/NFS/volumes
+    mount -t nfs 192.168.1.5:/mnt/tank/volumes /nas/NFS/volumes
     printf "mounted volumes to  /nas/NFS/volumes \n"
 fi
