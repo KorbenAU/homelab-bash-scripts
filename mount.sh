@@ -43,7 +43,7 @@ fi
 # =     projects     =
 # ====================
 
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
+if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ] || [ $valhost = "pc" ]
 then
     mount -t nfs 192.168.1.5:/mnt/tank/projects /nas/NFS/projects
     printf "mounted projects to  /nas/NFS/projects \n"
