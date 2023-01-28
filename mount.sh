@@ -12,7 +12,7 @@ then
     printf "mounted Downloads to  /home/gy/qbit/nas \n"
 fi
 
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
+if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ] || [ $valhost = "pc" ]
 then
     mount -t nfs 192.168.1.5:/mnt/tank/Downloads /nas/NFS/Downloads
     printf "mounted Downloads to  /nas/NFS/Downloads \n"
