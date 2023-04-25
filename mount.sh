@@ -2,59 +2,20 @@ valhost=$(hostname)
 
 printf "Host $valhost \n"
 
-# ====================
-# =    Downloads     =
-# ====================
-
-if [ $valhost = "n1" ]
+if [ $valhost = "n5" ]
 then
-    mount -t nfs 192.168.1.5:/mnt/tank/Downloads /home/gy/qbit/nas
-    printf "mounted Downloads to  /home/gy/qbit/nas \n"
-fi
+    mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
+    printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS \n"
 
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ] || [ $valhost = "pc" ]
-then
-    mount -t nfs 192.168.1.5:/mnt/tank/Downloads /nas/NFS/Downloads
-    printf "mounted Downloads to  /nas/NFS/Downloads \n"
-fi
+    mount -t nfs 192.168.1.6:/mnt/tank2/Media/Movies /data/downloads/Movies-NAS
+    printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/Movies /data/downloads/Movies-NAS \n"
 
+    mount -t nfs 192.168.1.6:/mnt/tank2/Media/Music /data/downloads/Music-NAS
+    printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/Music /data/downloads/Music-NAS \n"
 
-# ====================
-# =      GitLab      =
-# ====================
+    mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes
+    printf "mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes \n"
 
-if [ $valhost = "n1" ]
-then
-    mount -t nfs 192.168.1.5:/mnt/tank/GitLab /nas/NFS/GitLab
-    printf "mounted GitLab to  /nas/NFS/GitLab \n"
-fi
-
-# ====================
-# =     NextCloud    =
-# ====================
-
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ]
-then
-    mount -t nfs 192.168.1.5:/mnt/tank/NextCloud /nas/NFS/NextCloud
-    printf "mounted NextCloud to  /nas/NFS/NextCloud \n"
-fi
-
-# ====================
-# =     projects     =
-# ====================
-
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n4" ] || [ $valhost = "pc" ]
-then
-    mount -t nfs 192.168.1.5:/mnt/tank/projects /nas/NFS/projects
-    printf "mounted projects to  /nas/NFS/projects \n"
-fi
-
-# ====================
-# =      volumes     =
-# ====================
-
-if [ $valhost = "n1" ] || [ $valhost = "n2" ] || [ $valhost = "n3" ] || [ $valhost = "n4" ] || [ $valhost = "pc" ]
-then
-    mount -t nfs 192.168.1.5:/mnt/tank/volumes /nas/NFS/volumes
-    printf "mounted volumes to  /nas/NFS/volumes \n"
+    mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects
+    printf "mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects \n"
 fi
