@@ -2,7 +2,7 @@ valhost=$(hostname)
 
 printf "Host $valhost \n"
 
-if [ $valhost = "n5" ]
+if [ $valhost = "pc" ]
 then
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS \n"
