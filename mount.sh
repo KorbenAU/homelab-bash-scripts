@@ -24,6 +24,9 @@ if [ $valhost = "n1" ]
 then
     mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes
     printf "mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes \n"
+    
+    mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects
+    printf "mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects \n"
 fi
 
 if [ $valhost = "n2" ]
@@ -39,4 +42,7 @@ if [ $valhost = "n4" ]
 then
     mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes
     printf "mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes \n"
+    
+    mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects
+    printf "mount -t nfs 192.168.1.6:/mnt/tank/Projects /nas/NFS/Projects \n"
 fi
