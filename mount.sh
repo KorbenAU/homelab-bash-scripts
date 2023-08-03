@@ -7,6 +7,9 @@ then
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS \n"
 
+    mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
+    printf "mount -t nfs 192.168.1.6:/mnt/tank/Media/Porn /data/downloads/Porn-NAS \n"
+
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/Movies /data/downloads/Movies-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/Movies /data/downloads/Movies-NAS \n"
 
