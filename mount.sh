@@ -7,7 +7,7 @@ then
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS \n"
 
-    mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
+    mount -t nfs 192.168.1.6:/mnt/tank/Media/Porn /data/downloads/Porn-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank/Media/Porn /data/downloads/Porn-NAS \n"
 
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/Movies /data/downloads/Movies-NAS
@@ -16,7 +16,7 @@ then
     mount -t nfs 192.168.1.6:/mnt/tank2/Media/Music /data/downloads/Music-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/Music /data/downloads/Music-NAS \n"
 
-    mount -t nfs 192.168.1.6:/mnt/tank2/Media/TV /data/downloads/TV-NAS
+    mount -t nfs 192.168.1.6:/mnt/tank2/Media/Videos /data/downloads/Videos-NAS
     printf "mount -t nfs 192.168.1.6:/mnt/tank2/Media/Videos /data/downloads/Videos-NAS \n"
 
     mount -t nfs 192.168.1.6:/mnt/tank/Volumes /nas/NFS/Volumes
